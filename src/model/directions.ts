@@ -1,4 +1,4 @@
-import { Direction, Position } from "./types";
+import { Direction, Position } from "../types";
 
 const LEFT_ROTATION: Record<Direction, Direction> = {
   [Direction.NORTH]: Direction.WEST,

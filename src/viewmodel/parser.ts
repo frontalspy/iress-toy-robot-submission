@@ -1,4 +1,4 @@
-import { Direction, ParsedCommand } from "./types";
+import { Direction, ParsedCommand } from "../types";
 
 const SIMPLE_COMMANDS = new Set(["MOVE", "LEFT", "RIGHT", "REPORT"]);
 const VALID_DIRECTIONS = new Set<string>(Object.values(Direction));
