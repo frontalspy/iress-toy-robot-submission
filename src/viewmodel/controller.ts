@@ -1,5 +1,5 @@
-import { IController, IRobot } from "../interfaces";
-import { ParsedCommand } from "../types";
+import { IController, IRobot } from "../types/interfaces";
+import { ParsedCommand } from "../types/types";
 
 export class RobotController implements IController {
   constructor(private readonly robot: IRobot) {}
