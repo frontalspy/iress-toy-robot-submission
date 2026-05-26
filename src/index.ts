@@ -9,10 +9,8 @@ async function main(): Promise<void> {
   const robot = new Robot(table);
   const controller = new RobotController(robot);
   const parser = new CommandParser();
-  console.log("wow");
 
   await processLines((line) => {
-    console.log("PARSING");
     const command = parser.parse(line);
     if (!command) {
       console.warn(`Invalid command`);

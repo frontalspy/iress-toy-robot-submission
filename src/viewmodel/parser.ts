@@ -15,12 +15,19 @@ function parsePlaceArgs(
   args: string,
 ): { x: number; y: number; facing: Direction } | null {
   const parts = args.split(",");
-  if (parts.length !== 3) return null;
+  if (parts.length !== 3) {
+    return null;
+  }
 
   const [xStr, yStr, facingStr] = parts.map((p) => p.trim());
 
-  if (!isIntegerString(xStr) || !isIntegerString(yStr)) return null;
-  if (!isValidDirection(facingStr)) return null;
+  if (!isIntegerString(xStr) || !isIntegerString(yStr)) {
+    return null;
+  }
+
+  if (!isValidDirection(facingStr)) {
+    return null;
+  }
 
   return {
     x: parseInt(xStr, 10),
@@ -36,7 +43,9 @@ export class CommandParser {
     if (trimmed.startsWith("PLACE ")) {
       const args = trimmed.slice(6).trim();
       const placeArgs = parsePlaceArgs(args);
-      if (!placeArgs) return null;
+      if (!placeArgs) {
+        return null;
+      }
       return { type: "PLACE", ...placeArgs };
     }
 
