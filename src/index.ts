@@ -1,8 +1,8 @@
 import { processLines } from "./view/input";
-import { CommandParser } from "./viewmodel/parser";
-import { RobotController } from "./viewmodel/controller";
-import { Robot } from "./model/robot";
-import { Table } from "./model/table";
+import { CommandParser } from "./viewmodel/parser/parser";
+import { RobotController } from "./viewmodel/controller/controller";
+import { Robot } from "./model/robot/robot";
+import { Table } from "./model/table/table";
 
 async function main(): Promise<void> {
   const table = new Table(5, 5);

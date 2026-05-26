@@ -1,6 +1,6 @@
 import { Robot } from "./robot";
-import { Table } from "./table";
-import { Direction } from "../types/types";
+import { Table } from "../table/table";
+import { Direction } from "../directions/types";
 
 function makeRobot() {
   return new Robot(new Table(5, 5));

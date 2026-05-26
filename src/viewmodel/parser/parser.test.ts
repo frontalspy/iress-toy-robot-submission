@@ -1,5 +1,5 @@
+import { Direction } from "../../model/directions";
 import { CommandParser } from "./parser";
-import { Direction } from "../types/types";
 
 describe("CommandParser — PLACE", () => {
   const parser = new CommandParser();

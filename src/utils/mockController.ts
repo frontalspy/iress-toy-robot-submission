@@ -1,6 +1,6 @@
-import { Robot } from "../model/robot";
-import { Table } from "../model/table";
-import { RobotController } from "../viewmodel/controller";
+import { Robot } from "../model/robot/robot";
+import { Table } from "../model/table/table";
+import { RobotController } from "../viewmodel/controller/controller";
 
 export function makeController() {
   const table = new Table(5, 5);

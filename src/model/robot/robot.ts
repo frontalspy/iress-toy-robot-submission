@@ -1,6 +1,11 @@
-import { IRobot, ITable } from "../types/interfaces";
-import { Direction, Position } from "../types/types";
-import { getNextPosition, rotateLeft, rotateRight } from "./directions";
+import { IRobot } from "./types";
+import { ITable } from "../table/types";
+import { Direction, Position } from "../directions/types";
+import {
+  getNextPosition,
+  rotateLeft,
+  rotateRight,
+} from "../directions/directions";
 
 export class Robot implements IRobot {
   private position: Position | null = null;

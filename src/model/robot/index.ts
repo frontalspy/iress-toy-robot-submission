@@ -1,0 +1,1 @@
+export { IRobot } from "./types";

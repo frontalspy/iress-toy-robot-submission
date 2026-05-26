@@ -1,4 +1,4 @@
-import { ITable } from "../types/interfaces";
+import { ITable } from "./types";
 
 export class Table implements ITable {
   constructor(

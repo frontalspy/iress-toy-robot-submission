@@ -1,5 +1,5 @@
-import { Direction } from "../types/types";
-import { makeController } from "../utils/mockController";
+import { Direction } from "../../model/directions";
+import { makeController } from "../../utils/mockController";
 
 describe("RobotController — pre-placement", () => {
   it("should ignore MOVE before PLACE", () => {

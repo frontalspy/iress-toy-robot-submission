@@ -1,4 +1,4 @@
-import { Direction } from "../types/types";
+import { Direction } from "./types";
 import { getNextPosition, rotateLeft, rotateRight } from "./directions";
 
 function testRotation(

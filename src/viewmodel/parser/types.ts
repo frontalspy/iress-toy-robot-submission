@@ -1,15 +1,4 @@
-export enum Direction {
-  NORTH = "NORTH",
-  EAST = "EAST",
-  SOUTH = "SOUTH",
-  WEST = "WEST",
-}
-
-export interface Position {
-  x: number;
-  y: number;
-  facing: Direction;
-}
+import { Direction } from "../../model/directions";
 
 export type ParsedCommand =
   | { type: "PLACE"; x: number; y: number; facing: Direction }
