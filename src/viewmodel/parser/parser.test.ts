@@ -1,7 +1,7 @@
 import { Direction } from "../../model/directions";
 import { CommandParser } from "./parser";
 
-describe("CommandParser — PLACE", () => {
+describe("CommandParser - PLACE", () => {
   const parser = new CommandParser();
 
   it("should parse a valid PLACE command", () => {
@@ -48,7 +48,7 @@ describe("CommandParser — PLACE", () => {
   });
 });
 
-describe("CommandParser — simple commands", () => {
+describe("CommandParser - simple commands", () => {
   const parser = new CommandParser();
 
   it.each(["MOVE", "LEFT", "RIGHT", "REPORT"])("should parse %s", (cmd) => {

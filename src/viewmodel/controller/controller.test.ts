@@ -1,7 +1,7 @@
 import { Direction } from "../../model/directions";
 import { makeController } from "./mockController";
 
-describe("RobotController — pre-placement", () => {
+describe("RobotController - pre-placement", () => {
   it("should ignore MOVE before PLACE", () => {
     const controller = makeController();
     expect(controller.execute({ type: "MOVE" })).toBeNull();
@@ -20,7 +20,7 @@ describe("RobotController — pre-placement", () => {
   });
 });
 
-describe("RobotController — spec examples", () => {
+describe("RobotController - spec examples", () => {
   it("should report 0,1,NORTH given PLACE 0,0,NORTH → MOVE", () => {
     const controller = makeController();
     controller.execute({ type: "PLACE", x: 0, y: 0, facing: Direction.NORTH });
@@ -46,7 +46,7 @@ describe("RobotController — spec examples", () => {
   });
 });
 
-describe("RobotController — boundary protection", () => {
+describe("RobotController - boundary protection", () => {
   it("should not fall off north edge", () => {
     const controller = makeController();
     controller.execute({ type: "PLACE", x: 0, y: 4, facing: Direction.NORTH });
@@ -82,7 +82,7 @@ describe("RobotController — boundary protection", () => {
   });
 });
 
-describe("RobotController — multiple PLACE commands", () => {
+describe("RobotController - multiple PLACE commands", () => {
   it("should override first position with second valid PLACE", () => {
     const controller = makeController();
     controller.execute({ type: "PLACE", x: 0, y: 0, facing: Direction.NORTH });

@@ -6,7 +6,7 @@ function makeRobot() {
   return new Robot(new Table(5, 5));
 }
 
-describe("Robot — before placement", () => {
+describe("Robot - before placement", () => {
   it("should not be placed initially", () => {
     expect(makeRobot().isPlaced()).toBe(false);
   });
@@ -34,7 +34,7 @@ describe("Robot — before placement", () => {
   });
 });
 
-describe("Robot — placement", () => {
+describe("Robot - placement", () => {
   it("should place robot at valid position", () => {
     const robot = makeRobot();
     robot.place(0, 0, Direction.NORTH);
@@ -76,7 +76,7 @@ describe("Robot — placement", () => {
   });
 });
 
-describe("Robot — movement", () => {
+describe("Robot - movement", () => {
   it("should move forward in facing direction", () => {
     const robot = makeRobot();
     robot.place(0, 0, Direction.NORTH);
@@ -125,7 +125,7 @@ describe("Robot — movement", () => {
   });
 });
 
-describe("Robot — rotation", () => {
+describe("Robot - rotation", () => {
   it("should turn left", () => {
     const robot = makeRobot();
     robot.place(0, 0, Direction.NORTH);

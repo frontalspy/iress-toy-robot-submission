@@ -2,11 +2,11 @@
 
 ```bash
 npm install
-npm start   # interactive CLI — type one command per line and press Enter
-npm test    # runs the test suite
+npm start
+npm test
 ```
 
-Commands are read one per line from stdin.
+Commands are read one per line from the CLI. Type one command per line and press Enter to submit the command
 
 **Example:**
 
@@ -31,9 +31,9 @@ REPORT
 
 Code is organised into four layers with each subfolder domain having a single responsibility:
 
-- `model/` — pure domain set up and objects for main entities in the app, with their own types and feature level barrel exports
-- `viewmodel/` — data orchestration and input parsing
-- `view/` — input layer that reads user input via CLI
+- `model/` - pure domain set up and objects for main entities in the app, with their own types and feature level barrel exports
+- `viewmodel/` - data orchestration and input parsing
+- `view/` - input layer that reads user input via CLI
 - tests are stored next to their relative file for easy access
 
 
@@ -49,7 +49,7 @@ Lines are processed one at a time as they arrive rather than buffered and replay
 
 ### Suggested improvements
 
-- Configurable board size — accept board size as CLI arguments
-- Structured error reporting — more error handling and better error messaging to users
-- E2E tests — add integration tests that drive the full pipeline through `processLines` with a mock stdin to cover multi-command sequences end-to-end.
+- Configurable board size - accept board size as CLI arguments
+- Structured error reporting  more error handling and better error messaging to users
+- E2E tests - add integration tests that drive the full pipeline through `processLines` with a mock stdin to cover multi-command sequences end-to-end.
 - Visualation of the robot and board - show a visual representation of the board and robots current position to make it easier for users to better determine future commands.
